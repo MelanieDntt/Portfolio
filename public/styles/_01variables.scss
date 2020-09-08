@@ -1,0 +1,10 @@
+$dark-purple: #450920;
+$light-purple: #A63961;
+
+
+$screen-lg-min: 992px;
+@mixin l {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+}
