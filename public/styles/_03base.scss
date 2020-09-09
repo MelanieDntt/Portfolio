@@ -72,8 +72,30 @@ h3 {
 }
 .lien-git {
   color: #000;
+  font-size: 16px;
   &:hover {
     color: rgba($color: $light-purple, $alpha: 0.7);
+  }
+  @include l {
+    font-size: 18px;
+  }
+}
+.email-div,
+.tel-div  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.email-div {
+  a {
+    color: $dark-purple;
+    display: inline-block;
+    padding-top: 15px;
+    &:hover {
+      color: rgba($color: $light-purple, $alpha: 0.7);
+    }
   }
 }
 
@@ -120,7 +142,7 @@ nav {
   position: relative;
   line-height: 1.4em;
   font-size: 1.03em;   
-  padding: 20px;   
+  padding: 20px !important;   
   list-style: none;
   text-align: left;  
   font-weight: 100;  
@@ -139,7 +161,7 @@ nav {
         display: table-cell;
         vertical-align: top;
         position: absolute;
-        left: -100px;
+        left: -120px;
       }
     }
 
@@ -157,7 +179,7 @@ nav {
 
     &:after {
       box-shadow: 0 0 0 4px #000;    
-      left: -9px;
+      left: -27px;
       background: #fff;  
       border-radius: 50%;  
       height: 11px;
@@ -172,8 +194,19 @@ nav {
   .timeline {
     span {
       @include l {
-        left: -160px;
+        left: -170px;
       }
     }
+  }
+}
+
+/*--------------------- Footer ---------------------*/
+footer {
+  border-top: rgba($color: #909090, $alpha: 0.7) solid 1.5px;
+  max-width: 80%;
+  margin: 0 auto;
+  p {
+    text-transform: uppercase;
+    text-align: center;
   }
 }
