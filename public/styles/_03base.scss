@@ -33,6 +33,21 @@ h2 {
     background-color: $light-purple;
   } 
 }
+.h2-desktop {
+  display: none;
+  @include l {
+    display: block;
+  }
+}
+.h2-mobile {
+  h2 {
+    margin: 0;
+  }
+  @include l {
+    display: none;
+  }
+}
+
 h3 {
   font-size: 17px;
   text-transform: uppercase;
@@ -145,8 +160,11 @@ nav {
   padding: 20px !important;   
   list-style: none;
   text-align: left;  
-  font-weight: 100;  
-  max-width: 40%;
+  font-weight: 100; 
+  max-width: 60%; 
+  @include l {
+    max-width: 40%;
+  }
   .timeline-content {
     border-bottom: 1px dashed rgba(#000, 0.4);
     padding-bottom: (50px * 0.5);
