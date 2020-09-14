@@ -5,7 +5,7 @@ body {
   font-family: "Rubik", sans-serif;
 }
 h1 {
-  font-size: 25px;
+  font-size: 30px;
   color: $dark-purple;
   font-family: "Saira Stencil One", cursive;
   @include l {
@@ -55,9 +55,27 @@ h3 {
     font-size: 22px;
   }
 }
+.p-home {
+  font-size: 20px;
+  color: $dark-purple;
+  margin-top: 10px;
+  @include l {
+    font-size: 35px;
+  }
+}
 #home {
   padding-top: 30%;
+  min-height: calc(100vh - 85px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  h1 {
+    margin-bottom: 0;
+  }
   @include l {
+    text-align: left;
+    padding-top: 0;
     min-height: 100vh;
   }
 }
@@ -71,6 +89,18 @@ h3 {
   padding-top: 60px;
   min-height: 100vh;
 }
+.gif-welcome {
+  display: none;
+  @include l {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -100px;
+    img {
+      max-width: 700px;
+    }
+  }
+}
 .flex-desktop {
   @include l {
     display: flex;
@@ -83,6 +113,20 @@ h3 {
     img {
     height: 300px;
     }
+  }
+}
+.btn {
+  width: 100%;
+}
+.btn1 {
+  @include l {
+    width: 49%;
+    padding-right: 5px;
+  }
+}
+.btn2 {
+  @include l {
+    width: 49%;
   }
 }
 .lien-git {
