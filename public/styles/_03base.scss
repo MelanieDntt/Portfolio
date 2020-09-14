@@ -120,13 +120,12 @@ h3 {
 }
 .btn1 {
   @include l {
-    width: 49%;
-    padding-right: 5px;
+    width: 48%;
   }
 }
 .btn2 {
   @include l {
-    width: 49%;
+    width: 48%;
   }
 }
 .lien-git {
