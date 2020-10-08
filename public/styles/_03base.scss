@@ -115,27 +115,25 @@ h3 {
     }
   }
   .card-action {
+    text-align: center;
     a {
-      color: $light-purple;
+      color: $light-purple !important;
+      font-size: 18px;
+      @include l {
+        font-size: 22px;
+      }
     }
   }
 }
-.btn {
-  width: 100%;
+.card-action.flex {
+  display: flex;
+  justify-content: space-around;
 }
-.btn1 {
-  @include l {
-    width: 48.5%;
-  }
-}
-.btn2 {
-  @include l {
-    width: 48.5%;
-  }
-}
+
 .lien-git {
   color: #000;
   font-size: 16px;
+  text-decoration: underline;
   &:hover {
     color: rgba($color: $light-purple, $alpha: 0.7);
   }
