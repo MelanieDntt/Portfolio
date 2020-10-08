@@ -114,6 +114,11 @@ h3 {
     height: 300px;
     }
   }
+  .card-action {
+    a {
+      color: $light-purple;
+    }
+  }
 }
 .btn {
   width: 100%;
