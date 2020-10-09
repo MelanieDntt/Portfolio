@@ -5,7 +5,7 @@ body {
   font-family: "Rubik", sans-serif;
 }
 h1 {
-  font-size: 30px;
+  font-size: 37px;
   color: $dark-purple;
   font-family: "Saira Stencil One", cursive;
   @include l {
@@ -14,7 +14,7 @@ h1 {
 }
 h2 {
   font-family: "Saira Stencil One", cursive;
-  font-size: 19px;
+  font-size: 25px;
   color: #000;
   display: inline-block;
   position: relative;
@@ -56,7 +56,7 @@ h3 {
   }
 }
 .p-home {
-  font-size: 20px;
+  font-size: 25px;
   color: $dark-purple;
   margin-top: 10px;
   @include l {
