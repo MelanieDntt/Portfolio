@@ -1,2 +1,2 @@
 # Portfolio Mélanie Denotte
-http://melaniedenotte.be/
+https://melaniedntt.github.io/Portfolio/
