@@ -8,9 +8,6 @@ body {
   font-family: "Saira Stencil One", cursive;
   font-size: 1.5rem;
   color: $dark-purple !important;
-  @include l {
-    margin-left: 30px;
-  }
   span {
     padding-top: 0.5rem;
     position: absolute;
@@ -95,7 +92,7 @@ h3 {
   background-color: #45092026;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  margin-top: 3rem;
+  // margin-top: 3rem;
 }
 #portfolio {
   padding-top: 60px;
@@ -165,30 +162,44 @@ h3 {
 .lien-git {
   color: #000;
   font-size: 16px;
-  text-decoration: underline;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
   &:hover {
     color: rgba($color: $light-purple, $alpha: 0.7);
   }
   @include l {
     font-size: 18px;
   }
+  i {
+    margin-right: 0.5rem;
+  }
+  span {
+    text-decoration: underline;
+  }
 }
 .email-div,
-.tel-div  {
+.tel-div,
+.linkedinDiv{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 20px;
-}
-.email-div {
   a {
     color: $dark-purple;
     display: inline-block;
-    padding-top: 15px;
     &:hover {
       color: rgba($color: $light-purple, $alpha: 0.7);
     }
+    i {
+      &:hover {
+        color: rgba($color: $light-purple, $alpha: 0.7);
+      }
+    }
+  }
+  i {
+    font-size: 2rem;
+    color: $dark-purple;
+    display: inline-block;
+    margin-right: 1rem;
   }
 }
 
@@ -211,6 +222,13 @@ h3 {
   box-shadow: none !important;
 }
 
+section {
+  margin-top: 3rem;
+}
+#home {
+  margin-top: 0;
+}
+
 /*--------------------- MENU ---------------------*/
 nav {
   width: 100%;
@@ -221,23 +239,25 @@ nav {
   left: 0;
   top: 0;
   z-index: 100;
-  ul {
-    display: inline-block;
-    list-style: none;
-    li {
-      margin: 5px 5px;
-      @include l {
-        margin: 5px 30px;
-      }
-      a{
-        color: #000;
-        text-decoration: none;
-        transition: all .2s linear;
-        &:hover {
-          color: rgba($color: $light-purple, $alpha: 0.7);
-          transform: scale(1.2);
-          transition-delay: 0.2s;
-          background-color: transparent;
+  .nav-wrapper {
+    @include l {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    ul {
+      display: inline-block;
+      list-style: none;
+      li {
+        a{
+          color: #000;
+          text-decoration: none;
+          transition: all .2s linear;
+          &:hover {
+            color: rgba($color: $light-purple, $alpha: 0.7);
+            // transform: scale(1.2);
+            transition-delay: 0.15s;
+            background-color: transparent;
+          }
         }
       }
     }
